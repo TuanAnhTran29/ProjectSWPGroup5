@@ -1,0 +1,6 @@
+Hoàng - manage product
+Nguyên - customer order
+Minh - 3 cái trên 
+Công - 2 cái dưới
+Tuấn Anh - Trắng
+Long- FE
