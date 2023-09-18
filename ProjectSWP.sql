@@ -133,3 +133,51 @@ create table ManagerOrderDetail(
 	foreign key(manager_order_id) references ManagerOrder(manager_order_id),
 );
 
+alter table Users add salary float;
+
+create table CustomerOrder(
+	order_id int not null identity(1,1),
+	customer_id int not null,
+	seller_id int not null,
+	ship_date date,
+	require_date date,
+	order_date date,
+	ship_address varchar(100)
+
+	primary key(order_id),
+	foreign key(customer_id) references Customer(customer_id),
+	foreign key(seller_id) references Users(user_id)
+);
+
+create table OrderDetail(
+	id int not null identity(1,1),
+	order_id int not null,
+	product_id int not null,
+	voucher_id int not null,
+	price float,
+	quantity int
+
+	primary key(id),
+	foreign key(order_id) references CustomerOrder(order_id),
+	foreign key(product_id) references Product(product_id),
+	foreign key(voucher_id) references Discount(discount_id)
+);
+
+create table Cart(
+	cart_id int not null identity(1,1),
+	customer_id int not null
+
+	primary key(cart_id),
+	foreign key(customer_id) references Customer(customer_id)
+);
+
+create table CartItem(
+	id int not null identity(1,1),
+	cart_id int not null,
+	product_id int not null,
+	quantity int
+
+	primary key(id),
+	foreign key (cart_id) references Cart(cart_id),
+	foreign key(product_id) references Product(product_id)
+);
