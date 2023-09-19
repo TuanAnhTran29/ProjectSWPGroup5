@@ -143,7 +143,8 @@ create table CustomerOrder(
 	ship_date date,
 	require_date date,
 	order_date date,
-	ship_address varchar(100)
+	ship_address varchar(100),
+	status bit
 
 	primary key(order_id),
 	foreign key(customer_id) references Customer(customer_id),
