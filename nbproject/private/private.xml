@@ -3,10 +3,55 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/.git/config</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/StorageStaff.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAODiscount.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ManagerOrderDetailController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ManagerOrderController.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/index.html</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/MyClass.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Account.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CartItemController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Discount.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOCart.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/ManagerOrderDetail.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CustomerOrderController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Provider.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAORole.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CustomerOrderDetailController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ProviderController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/ManagerOrder.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/CustomerOrderDetail.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/AccountController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Customer.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOManagerOrderDetail.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/User.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Role.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/connection/DBContext.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOCustomerOrderDetail.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOCategory.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/RoleController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOProduct.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOUser.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOStorageStaff.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CartController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/DiscountController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Category.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOManagerOrder.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOCustomer.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/CartItem.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOCustomerOrder.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CategoryController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ProductController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/CustomerOrder.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOProvider.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Product.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOAccount.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/.git/config</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CustomerController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/StorageStaffController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/UserController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Cart.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/DAOCartItem.java</file>
         </group>
     </open-files>
 </project-private>

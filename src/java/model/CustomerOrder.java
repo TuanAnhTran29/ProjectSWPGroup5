@@ -16,11 +16,12 @@ public class CustomerOrder {
     private String requireDate;
     private String orderDate;
     private String shipAddress;
+    private String status;
 
     public CustomerOrder() {
     }
 
-    public CustomerOrder(int orderID, int customerID, int sellerID, String shipDate, String requireDate, String orderDate, String shipAddress) {
+    public CustomerOrder(int orderID, int customerID, int sellerID, String shipDate, String requireDate, String orderDate, String shipAddress, String status) {
         this.orderID = orderID;
         this.customerID = customerID;
         this.sellerID = sellerID;
@@ -28,15 +29,17 @@ public class CustomerOrder {
         this.requireDate = requireDate;
         this.orderDate = orderDate;
         this.shipAddress = shipAddress;
+        this.status= status;
     }
 
-    public CustomerOrder(int customerID, int sellerID, String shipDate, String requireDate, String orderDate, String shipAddress) {
+    public CustomerOrder(int customerID, int sellerID, String shipDate, String requireDate, String orderDate, String shipAddress, String status) {
         this.customerID = customerID;
         this.sellerID = sellerID;
         this.shipDate = shipDate;
         this.requireDate = requireDate;
         this.orderDate = orderDate;
         this.shipAddress = shipAddress;
+        this.status= status;
     }
 
     public int getOrderID() {
@@ -93,6 +96,14 @@ public class CustomerOrder {
 
     public void setShipAddress(String shipAddress) {
         this.shipAddress = shipAddress;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     
     

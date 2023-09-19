@@ -15,22 +15,25 @@ import java.util.logging.Logger;
  * @author tuana
  */
 public class DBContext {
-    public static Connection conn=null;
     
-    public DBContext(String url,String username,String password){
-        try {
-            //goi driver
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            conn=DriverManager.getConnection(url,username,password);
-         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
+    public static Connection conn;
+    
+    private static String jdbcURL = "jdbc:sqlserver://localhost:1433;databaseName=ProjectSWP";
+    private static String jdbcUsername = "sa";
+    private static String jdbcPassword = "123456";
+    
+    public static Connection getConnection(){
+        if (conn == null) {
+            try {
+                //load driver và đăng kí nó với ứng dụng (Đăng ký gọi phương thức Class.forName("driverName")
+                Class.forName("com.mysql.jdbc.Driver");
+                //tạo kết nối (connection)
+                conn = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+                System.out.println("success");
+            } catch (ClassNotFoundException | SQLException e) {
+                e.printStackTrace();
+            }
         }
-    }
-    
-    public DBContext(){
-       this("jdbc:sqlserver://localhost:1433;databaseName=ProjectSWP",
-               "sa","123456");
+        return conn;
     }
 }
