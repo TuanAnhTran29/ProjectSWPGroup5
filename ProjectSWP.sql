@@ -96,6 +96,7 @@ create table Product(
 	expiry date,
 	mani_date date,
 	discount_id int,
+	product_image varchar(225),
 	price float,
 	quantity int,
 	active bit,
