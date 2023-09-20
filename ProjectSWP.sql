@@ -38,8 +38,7 @@ create table Customer(
 	customer_id int not null identity(1,1),
 	user_id int not null,
 	region varchar(100),
-	country varchar(100),
-	balance float
+	country varchar(100)
 
 	primary key(customer_id)
 	foreign key(user_id) references Users(user_id)
