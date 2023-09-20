@@ -26,6 +26,8 @@ public class AccountService implements IAccountService{
 "           ,?" +
 "           ,?)";
     
+    private final String UPDATE_STATUS= "update Account set status= ?";
+    
 
     @Override
     public void add(Account account) {
@@ -63,7 +65,18 @@ public class AccountService implements IAccountService{
 
     @Override
     public void updateAccountStatus(boolean status) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        try {
+            PreparedStatement pre= connection.prepareStatement(UPDATE_STATUS);
+            if (status==true) {
+                pre.setInt(1, 1);
+            }else{
+                pre.setInt(1, 0);
+            }
+            
+            pre.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
     
     

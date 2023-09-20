@@ -6,6 +6,7 @@ package service.customer;
 
 import connection.DBContext;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.List;
 import model.Customer;
 
@@ -13,12 +14,31 @@ import model.Customer;
  *
  * @author tuana
  */
-public class CustomerService implements ICustomerService{
-    private final Connection connection= DBContext.getConnection();
+public class CustomerService implements ICustomerService {
+
+    private final Connection connection = DBContext.getConnection();
+
+    private static final String INSERT_CUSTOMER = "INSERT INTO [dbo].[Customer]\n"
+            + "           ([user_id]\n"
+            + "           ,[region]\n"
+            + "           ,[country])\n"
+            + "     VALUES\n"
+            + "           (?"
+            + "           ,?"
+            + "           ,?)";
 
     @Override
-    public void add(Customer t) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void add(Customer customer) {
+        try {
+            PreparedStatement pre = connection.prepareStatement(INSERT_CUSTOMER);
+            pre.setInt(1, customer.getUserID());
+            pre.setString(2, customer.getRegion());
+            pre.setString(3, customer.getCountry());
+
+            pre.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
