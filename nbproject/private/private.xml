@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/connection/DBContext.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/account/IAccountService.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/forgot_password.jsp</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/user/IUserService.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Account.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CartItemController.java</file>
@@ -14,6 +15,7 @@
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/create_account.jsp</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/account/AccountService.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/IGeneralService.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/.git/config</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/AccountController.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/register.jsp</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/login.jsp</file>

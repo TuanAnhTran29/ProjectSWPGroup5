@@ -97,6 +97,9 @@ public class AccountController extends HttpServlet {
             case "sendCodeAgain":
                 sendCodeAgain(request, response);
                 break;
+            case "forgotPage":
+                showForgotPage(request, response);
+                break;
             default:
                 throw new AssertionError();
         }
@@ -123,6 +126,12 @@ public class AccountController extends HttpServlet {
                 break;
             case "createAccount":
                 createAccount(request, response);
+                break;
+            case "forgotPassword":
+                forgotPassword(request, response);
+                break;
+            case "login":
+                login(request, response);
                 break;
             default:
                 throw new AssertionError();
@@ -158,6 +167,10 @@ public class AccountController extends HttpServlet {
         getRequestDispatch(request, response, "account/login.jsp");
     }
 
+    private void showForgotPage(HttpServletRequest request, HttpServletResponse response) {
+        getRequestDispatch(request, response, "account/forgot_password.jsp");
+    }
+
     private void sendCodeAgain(HttpServletRequest request, HttpServletResponse response) {
         request.getSession().removeAttribute("code");
         HttpSession session = request.getSession();
@@ -181,7 +194,6 @@ public class AccountController extends HttpServlet {
                 request.setAttribute("message", "Email used!");
                 getRequestDispatch(request, response, "account/register.jsp");
             } else {
-
 
                 String code = EmailUtility.getRandomCode();
                 EmailUtility.sendEmail(email, code);
@@ -225,12 +237,11 @@ public class AccountController extends HttpServlet {
         String firstName = request.getParameter("fname");
         String lastName = request.getParameter("lname");
         String username = request.getParameter("username");
-        
+
         request.setAttribute("fname", firstName);
         request.setAttribute("lname", lastName);
         request.setAttribute("username", username);
-        
-        
+
         if (accountService.findByUsername(username) != null) {
             request.setAttribute("message", "Username existed!");
             getRequestDispatch(request, response, "account/create_account.jsp");
@@ -252,18 +263,18 @@ public class AccountController extends HttpServlet {
                     } else if (!password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$")) {
                         request.setAttribute("message", "Password must be longer than 8 characters and contain ai least uppercase, lowercase and number");
                         getRequestDispatch(request, response, "account/create_account.jsp");
-                    } else {                       
+                    } else {
                         String fullName = firstName + " " + lastName;
 
                         byte[] encrypt = password.getBytes();
 
                         Account account = new Account(username, Base64.getEncoder().encodeToString(encrypt), true);
                         accountService.add(account);
-                        
+
                         account = accountService.findByUsername(username);
-                        
-                        HttpSession session= request.getSession();
-                        String email= (String) session.getAttribute("email");
+
+                        HttpSession session = request.getSession();
+                        String email = (String) session.getAttribute("email");
 
                         User user = new User(fullName, "", "", phone, email, 1, "C:\\Users\\tuana\\OneDrive\\Máy tính\\ProjectSWP\\ProjectSWP\\image\\defaultavatar.png", 0, account.getAccountID(), 7);
                         userService.add(user);
@@ -277,6 +288,38 @@ public class AccountController extends HttpServlet {
                     }
                 }
             }
+        }
+    }
+
+    private void forgotPassword(HttpServletRequest request, HttpServletResponse response) {
+        String email = request.getParameter("email");
+        String code = EmailUtility.getRandomCode();
+
+        HttpSession session = request.getSession();
+        session.setAttribute("code", code);
+
+        EmailUtility.sendEmail(email, code);
+
+        getRequestDispatch(request, response, "account/new_password.jsp");
+    }
+
+    private void login(HttpServletRequest request, HttpServletResponse response) {
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+
+        request.setAttribute("username", username);
+
+        if (accountService.findByUsername(username) != null) {
+            if (accountService.findByUsername(username).getPassword().equals(Base64.getEncoder().encodeToString(password.getBytes()))) {
+                request.setAttribute("message", "Login successfully!");
+                getRequestDispatch(request, response, "account/login.jsp");
+            } else {
+                request.setAttribute("message", "Username or password is incorrect!");
+                getRequestDispatch(request, response, "account/login.jsp");
+            }
+        } else {
+            request.setAttribute("message", "Account is not exist!");
+            getRequestDispatch(request, response, "account/login.jsp");
         }
     }
 

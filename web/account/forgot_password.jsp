@@ -1,6 +1,6 @@
 <%-- 
-    Document   : login
-    Created on : Sep 21, 2023, 1:00:39 AM
+    Document   : forgot_password
+    Created on : Sep 21, 2023, 9:01:29 AM
     Author     : tuana
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -95,19 +95,21 @@
             </header>
             <!-- end header section -->
         </div>
-
+        
         <div class="login-page">
             <div class="form">
-                <c:if test="${requestScope['message']!= null}">
-                    <span class="message" style="color: red">${requestScope['message']}</span>
-                </c:if>
-                    <form class="login-form" action="AccountController?action=login" method="Post">
-                    <input type="text" placeholder="username" name="username" required=""/>
-                    <input type="password" placeholder="password" name="password" required=""/>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                    <p class="message">Not registered? <a href="AccountController?action=registerPage">Create an account</a></p>
-                    <p class="message"><a href="AccountController?action=forgotPage">Forgot password?</a></p>
+                <div>
+            <c:if test="${requestScope['message']!= null}">
+                <span class="message" style="color: red">${requestScope['message']}</span>
+            </c:if>
+        </div>
+                <form class="register-form" action="AccountController?action=forgotPassword" method="Post">
+                    <input type="email" placeholder="Email" name="email" required=""/>
+                    
+                    <input type="submit" value="Get confirmation code">
                 </form>
+                    <p class="message">Already registered? <a href="AccountController?action=loginPage">Sign In</a></p>
+
             </div>
         </div>
 

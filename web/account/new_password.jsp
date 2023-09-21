@@ -101,12 +101,11 @@
                 <c:if test="${requestScope['message']!= null}">
                     <span class="message" style="color: red">${requestScope['message']}</span>
                 </c:if>
-                    <form class="login-form" action="AccountController?action=login" method="Post">
-                    <input type="text" placeholder="username" name="username" required=""/>
-                    <input type="password" placeholder="password" name="password" required=""/>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                <form class="login-form" action="AccountController?action=forgotPassword">
+                    <input type="password" name="password" placeholder="New password" required=""/>
+                    <input type="password" name="cpassword" placeholder="Confirm new password" required=""/>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                     <p class="message">Not registered? <a href="AccountController?action=registerPage">Create an account</a></p>
-                    <p class="message"><a href="AccountController?action=forgotPage">Forgot password?</a></p>
                 </form>
             </div>
         </div>
