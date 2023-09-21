@@ -336,6 +336,7 @@ public class AccountController extends HttpServlet {
         if (accountService.findByUsername(username) != null) {
             if (accountService.findByUsername(username).getPassword().equals(Base64.getEncoder().encodeToString(password.getBytes()))) {
                 request.setAttribute("message", "Login successfully!");
+                request.getSession().setAttribute("account", accountService.findByUsername(username));
                 getRequestDispatch(request, response, "account/login.jsp");
             } else {
                 request.setAttribute("message", "Username or password is incorrect!");
