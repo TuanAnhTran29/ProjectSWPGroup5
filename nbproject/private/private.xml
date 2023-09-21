@@ -3,72 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/StorageStaff.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ManagerOrderDetailController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/provider/IProviderService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/customer_order/ICustomerOrderService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ManagerOrderController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/index.html</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/connection/DBContext.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/account/IAccountService.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/user/IUserService.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Account.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CartItemController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/product/IProductService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/role/RoleService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/cart_item/CartItemService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/product/ProductService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/category/CategoryService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Discount.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/ManagerOrderDetail.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CustomerOrderController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/storage_staff/IStorageStaffService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Provider.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/cart/CartService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/account/IAccountService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CustomerOrderDetailController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ProviderController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/emailSender/EmailUtility.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/cart/ICartService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/ManagerOrder.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/CustomerOrderDetail.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/manager_order/ManagerOrderService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/AccountController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/manager_order/IManagerOrderService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Customer.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/User.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Role.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/connection/DBContext.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/manager_order_detail/ManagerOrderDetailService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/customer_order_detail/ICustomerOrderDetailService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/category/ICategoryService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/RoleController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/customer_order_detail/CustomerOrderDetailService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/storage_staff/StorageStaffService.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/user/UserService.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CartController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/DiscountController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/customer/CustomerService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/cart_item/ICartItemService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Category.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/IGeneralService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/manager_order_detail/IManagerOrderDetailService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/CartItem.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/discount/IDiscountService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CategoryController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/ProductController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/CustomerOrder.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Product.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/customer_order/CustomerOrderService.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/sender/EmailUtility.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/create_account.jsp</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/account/AccountService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/provider/ProviderService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/.git/config</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/CustomerController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/IGeneralService.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/AccountController.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/register.jsp</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/login.jsp</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/StorageStaffController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/discount/DiscountService.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Customer.java</file>
             <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/controller/UserController.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/customer/ICustomerService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/service/role/IRoleService.java</file>
-            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/Cart.java</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/web/account/verify_email.jsp</file>
+            <file>file:/C:/Users/tuana/OneDrive/Máy%20tính/ProjectSWP/ProjectSWP/src/java/model/User.java</file>
         </group>
     </open-files>
 </project-private>

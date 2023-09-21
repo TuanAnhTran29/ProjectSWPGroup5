@@ -14,4 +14,10 @@ import service.IGeneralService;
  */
 public interface IAccountService extends IGeneralService<Account>{
     void updateAccountStatus(boolean status);
+    
+    Account findByUsername(String username);
+
+//    Account findByEmail(String email);
+
+//    Account findByPhone(String phone);
 }

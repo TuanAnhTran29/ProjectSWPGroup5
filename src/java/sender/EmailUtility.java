@@ -1,4 +1,4 @@
-package emailSender;
+package sender;
 
 
 import javax.mail.*;
@@ -9,16 +9,15 @@ import javax.mail.internet.MimeMessage;
 
 public class EmailUtility {
 
-    public String getRandomCode() {
+    public static String getRandomCode() {
         Random rnd = new Random();
         int number = rnd.nextInt(999999);
 
         return String.format("%06d", number);
     }
 
-    public boolean sendEmail(String toEmail, String subject,String text, String code) {
-        boolean test = false;
-
+    public static void sendEmail(String toEmail, String code) {
+        
         String fromEmail = "tuananhtran291003@gmail.com";
         String password = "bvqquguldrnovxyx";
 
@@ -35,24 +34,21 @@ public class EmailUtility {
                     return new PasswordAuthentication(fromEmail, password);
                 }
             });
-
+            
             Message message = new MimeMessage(session);
 
             message.setFrom(new InternetAddress(fromEmail));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(toEmail));
 
-            message.setSubject("User email verification");
-            message.setText("Register successfully. Code: " + code);
+            message.setSubject("Account email verification");
+            message.setText("Register successfully. Verification code: " + code);
 
             Transport.send(message);
 
-            test = true;
-
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        return test;
     }
 
 }

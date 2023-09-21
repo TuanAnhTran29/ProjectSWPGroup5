@@ -26,7 +26,7 @@ public class DBContext {
         if (conn == null) {
             try {
                 //load driver và đăng kí nó với ứng dụng (Đăng ký gọi phương thức Class.forName("driverName")
-                Class.forName("com.mysql.jdbc.Driver");
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 //tạo kết nối (connection)
                 conn = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
                 System.out.println("success");

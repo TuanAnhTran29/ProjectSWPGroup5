@@ -15,7 +15,7 @@ public class User {
     private String dob;
     private String phone;
     private String email;
-    private String gender;
+    private int gender;
     private String avartar;
     private float salary;
     private int accountID;
@@ -24,7 +24,7 @@ public class User {
     public User() {
     }
 
-    public User(int userID, String fullName, String address, String dob, String phone, String email, String gender, String avartar, float salary, int accountID, int roleID) {
+    public User(int userID, String fullName, String address, String dob, String phone, String email, int gender, String avartar, float salary, int accountID, int roleID) {
         this.userID = userID;
         this.fullName = fullName;
         this.address = address;
@@ -38,7 +38,7 @@ public class User {
         this.roleID = roleID;
     }
 
-    public User(String fullName, String address, String dob, String phone, String email, String gender, String avartar, float salary, int accountID, int roleID) {
+    public User(String fullName, String address, String dob, String phone, String email, int gender, String avartar, float salary, int accountID, int roleID) {
         this.fullName = fullName;
         this.address = address;
         this.dob = dob;
@@ -99,11 +99,11 @@ public class User {
         this.email = email;
     }
 
-    public String getGender() {
+    public int getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(int gender) {
         this.gender = gender;
     }
 

@@ -11,6 +11,9 @@ import service.IGeneralService;
  *
  * @author tuana
  */
-public interface IUserService extends IGeneralService<User>{
-    
+public interface IUserService extends IGeneralService<User> {
+
+    User findByEmail(String email);
+
+    User findByPhone(String phone);
 }
