@@ -97,6 +97,9 @@ public class AccountController extends HttpServlet {
             case "sendCodeAgain":
                 sendCodeAgain(request, response);
                 break;
+            case "sendCodeForgotAgain":
+                sendCodeForgotAgain(request, response);
+                break;
             case "forgotPage":
                 showForgotPage(request, response);
                 break;
@@ -132,6 +135,12 @@ public class AccountController extends HttpServlet {
                 break;
             case "login":
                 login(request, response);
+                break;
+            case "verifyForgotPassword":
+                verifyForgotPassword(request, response);
+                break;
+            case "updateNewPassword":
+                updateNewPassword(request, response);
                 break;
             default:
                 throw new AssertionError();
@@ -184,6 +193,19 @@ public class AccountController extends HttpServlet {
         getRequestDispatch(request, response, "account/verify_email.jsp");
     }
 
+    private void sendCodeForgotAgain(HttpServletRequest request, HttpServletResponse response) {
+        request.getSession().removeAttribute("code");
+        HttpSession session = request.getSession();
+        String email = (String) session.getAttribute("email");
+
+        String code = EmailUtility.getRandomCode();
+        EmailUtility.sendEmail(email, code);
+
+        session.setAttribute("code", code);
+
+        getRequestDispatch(request, response, "account/verify_forgot_password.jsp");
+    }
+
     private void register(HttpServletRequest request, HttpServletResponse response) {
         String email = request.getParameter("email");
         if (!email.matches("^[a-z][a-z0-9_]{5,32}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$")) {
@@ -214,6 +236,7 @@ public class AccountController extends HttpServlet {
 
         String verify_code = (String) request.getSession().getAttribute("code");
         request.getSession().removeAttribute("code");
+        
         if (code.equals(verify_code)) {
             getRequestDispatch(request, response, "account/create_account.jsp");
         } else {
@@ -297,10 +320,11 @@ public class AccountController extends HttpServlet {
 
         HttpSession session = request.getSession();
         session.setAttribute("code", code);
+        session.setAttribute("email", email);
 
         EmailUtility.sendEmail(email, code);
 
-        getRequestDispatch(request, response, "account/new_password.jsp");
+        getRequestDispatch(request, response, "account/verify_forgot_password.jsp");
     }
 
     private void login(HttpServletRequest request, HttpServletResponse response) {
@@ -319,6 +343,36 @@ public class AccountController extends HttpServlet {
             }
         } else {
             request.setAttribute("message", "Account is not exist!");
+            getRequestDispatch(request, response, "account/login.jsp");
+        }
+    }
+
+    private void verifyForgotPassword(HttpServletRequest request, HttpServletResponse response) {
+        String code = request.getParameter("code");
+
+        String verify_code = (String) request.getSession().getAttribute("code");
+        request.getSession().removeAttribute("code");
+        request.getSession().removeAttribute("email");
+
+        if (code.equals(verify_code)) {
+            getRequestDispatch(request, response, "account/new_password.jsp");
+        } else {
+            request.setAttribute("message", "Verification failed!");
+            getRequestDispatch(request, response, "account/forgot_password.jsp");
+        }
+    }
+
+    private void updateNewPassword(HttpServletRequest request, HttpServletResponse response) {
+        String password = request.getParameter("password");
+        String confirm = request.getParameter("cpassword");
+        if (!password.equals(confirm)) {
+            request.setAttribute("message", "Password and confirm password must be matched!");
+            getRequestDispatch(request, response, "account/new_password.jsp");
+        } else if (!password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{8,20}$")) {
+            request.setAttribute("message", "Password must be longer than 8 characters and contain ai least uppercase, lowercase and number");
+            getRequestDispatch(request, response, "account/new_password.jsp");
+        } else {
+            request.setAttribute("message", "Update password successfully!");
             getRequestDispatch(request, response, "account/login.jsp");
         }
     }
