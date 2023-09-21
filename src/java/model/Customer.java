@@ -13,24 +13,21 @@ public class Customer {
     private int userID;
     private String region;
     private String country;
-    private float balance;
 
     public Customer() {
     }
 
-    public Customer(int customerID, int userID, String region, String country, float balance) {
+    public Customer(int customerID, int userID, String region, String country) {
         this.customerID = customerID;
         this.userID = userID;
         this.region = region;
         this.country = country;
-        this.balance = balance;
     }
 
-    public Customer(int userID, String region, String country, float balance) {
+    public Customer(int userID, String region, String country) {
         this.userID = userID;
         this.region = region;
         this.country = country;
-        this.balance = balance;
     }
 
     public int getCustomerID() {
@@ -63,14 +60,6 @@ public class Customer {
 
     public void setCountry(String country) {
         this.country = country;
-    }
-
-    public float getBalance() {
-        return balance;
-    }
-
-    public void setBalance(float balance) {
-        this.balance = balance;
     }
     
     
