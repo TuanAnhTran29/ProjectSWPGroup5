@@ -101,7 +101,7 @@
                 <c:if test="${requestScope['message']!= null}">
                     <span class="message" style="color: red">${requestScope['message']}</span>
                 </c:if>
-                <form class="login-form" action="AccountController?action=forgotPassword">
+                <form class="login-form" action="AccountController?action=updateNewPassword" method="Post">
                     <input type="password" name="password" placeholder="New password" required=""/>
                     <input type="password" name="cpassword" placeholder="Confirm new password" required=""/>
                     <button type="submit" class="btn btn-primary">Submit</button>
